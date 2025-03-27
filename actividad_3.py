@@ -62,3 +62,20 @@ ax.legend()
 plt.tight_layout()
 plt.savefig('ventas_granadilla_tomates.png')  # Guardar en archivo
 plt.show()
+
+# Crear la serie con los utensilios y sus respectivas unidades
+utensilios = pd.Series(
+    {
+        'Cuchara': '3 unidades',
+        'Tenedor': '2 unidades',
+        'Cuchillo': '4 unidades',
+        'Plato': '5 unidades'
+    },
+    name='Cocina'
+)
+
+# Mostrar la serie
+print(utensilios)
+
+# Guardar la serie en un archivo CSV
+utensilios.to_csv('utensilios.csv', header=True, index=True)
