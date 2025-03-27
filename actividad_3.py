@@ -18,3 +18,5 @@ df = pd.DataFrame(data)
 
 # Mostrar el DataFrame
 print(df)
+# Guardar el DataFrame en un archivo CSV
+df.to_csv('frutas.csv', index=False)
