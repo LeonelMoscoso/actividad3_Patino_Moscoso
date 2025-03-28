@@ -107,3 +107,4 @@ resultados = pd.concat([primeras_filas, ultimas_filas])
 resultados.to_csv('resultado_primeras_ultimas_filas.csv', index=False)
 
 print("Archivo generado: resultado_primeras_ultimas_filas.csv")
+
